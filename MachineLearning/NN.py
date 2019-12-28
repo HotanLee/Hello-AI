@@ -85,7 +85,7 @@ class NeuralNetwork:
                 o1 = sigmoid(sum_o1)
 
                 y_pred = o1
-                d_L_d_ypred = -2/M*(y_true-y_pred)
+                d_L_d_ypred = -2*(y_true-y_pred)
 
                 # Neuron o1
                 d_ypred_d_w5 = h1*deriv_sigmoid(sum_o1)
